@@ -11,7 +11,7 @@ import (
 
 // (x << n == x*2^n ) (x >> n == x*2^(-n))
 
-//The expression T(v) converts the value v to the type T.
+//The expression TStruct(v) converts the value v to the type TStruct.
 var (
 	ToBe   bool       = false
 	MaxInt uint64     = 1<<64 - 1
@@ -21,9 +21,9 @@ var (
 const Pi = 3.14 //or const Pi float32= 3.14
 
 func main() {
-	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
-	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
-	fmt.Printf("Type: %T Value: %v\n", z, z)
+	fmt.Printf("Type: %TStruct Value: %v\n", ToBe, ToBe)
+	fmt.Printf("Type: %TStruct Value: %v\n", MaxInt, MaxInt)
+	fmt.Printf("Type: %TStruct Value: %v\n", z, z)
 
 	const World = "世界"
 	fmt.Println("Hello", World)
